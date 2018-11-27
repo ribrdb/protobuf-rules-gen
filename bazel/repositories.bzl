@@ -42,3 +42,8 @@ proto_gen(
         urls = ["https://github.com/google/protobuf/archive/%s.tar.gz" % (protobuf_commit,)],
     )
 
+    native.http_jar(
+        name = "com_google_cloud_firestore_emulator",
+        sha256 = "6c72477c84d384cfebcbb53a8e514b99d171f082d13b8a425bcab1eb200e1d25",
+        url = "https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.2.1.jar",
+    )
